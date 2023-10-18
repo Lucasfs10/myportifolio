@@ -1,23 +1,35 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './Components/Header';
+import ProfileCard from './Components/ProfileCard';
+import Sobre from './Components/Sobre';
+import React, { useRef } from 'react';
+import Logo from '../src/Components/assents/profile.jpg'
+import Contato from './Components/Contato';
 
 function App() {
+  const meuLinkRef = useRef(null);
+
+  const rolarParaSecao = (targetId) => {
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div>
+        <Header rolar={rolarParaSecao} />
+      </div>
+      <div>
+        <ProfileCard />
+      </div>
+      <div id="sobre">
+        <Sobre />
+      </div>
+      {/* <div>
+        <Contato />
+      </div> */}
     </div>
   );
 }

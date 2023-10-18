@@ -1,0 +1,60 @@
+header {
+    height: 80px;
+    /* background-color: #3498db; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+    padding: 0 20px;
+    /* position: fixed; */
+    width: 100%;
+}
+
+/* Estilizando o nome no lado esquerdo */
+.nome {
+    padding-left: 20px;
+    color: #fff;
+    font-size: 18px;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    display: flex;
+}
+
+.menu {
+    padding-right: 20px;
+    flex: 1;
+    justify-content: flex-start;
+    display: flex;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 20px;
+    font-size: 14px;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        /* Alinhe os elementos verticalmente */
+        align-items: center;
+        /* Alinhe os itens no centro da tela */
+    }
+
+    .menu {
+        margin-top: 10px;
+        margin-left: 10px;
+        /* Adicione espaço acima dos links */
+    }
+}

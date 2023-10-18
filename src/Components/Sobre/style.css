@@ -1,0 +1,176 @@
+/* Estilize a seção "Sobre" */
+.sobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: blue; */
+    color: #FFF;
+}
+
+/* Estilize o título */
+/* .sobre h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+} */
+
+/* Estilize o contêiner do conteúdo "Sobre" */
+.conteudo-sobre {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+/* Estilize a foto */
+.foto img {
+    border-radius: 50%;
+    box-shadow: rgba(255, 255, 255, 0.75) 0px 5px 15px;
+}
+
+/* Estilize o texto */
+.texto {
+    padding: 50px;
+    width: 30%;
+    /* text-align: left; */
+    align-items: center;
+}
+
+/* Quebrar de linha do texto em telas menores */
+@media (max-width: 768px) {
+    .conteudo-sobre {
+        flex-direction: column;
+    }
+
+    .foto img {
+        margin-right: 0;
+    }
+}
+
+.skills {
+    font-size: 24px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #232427;
+}
+
+/* .skills h2 {
+    color: #FFF;
+} */
+
+.containerS {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    padding: 100px 0 50px;
+}
+
+.cardS {
+    position: relative;
+    min-width: 320px;
+    height: 350px;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2), inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+        5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    margin: 30px;
+    flex-direction: column;
+}
+
+.cardS .box {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background: #2a2b2f;
+    border-radius: 15px;
+    border: 2px solid #1e1f23;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.cardS:hover .box {
+    transform: translateY(-50px);
+    box-shadow: 0 40px 70px rgba(0, 0, 0, 0.5);
+}
+
+.contentS {
+    padding: 20px;
+    text-align: center;
+    flex-direction: column;
+}
+
+.icon {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    background: #f00;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.icon .fa {
+    color: #fff;
+    font-size: 2em;
+}
+
+.contentS h3 {
+    /* font-size: 1.8em; */
+    color: #fff;
+    font-weight: 300;
+}
+
+.contentS h4 {
+    color: #fff;
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.contentS h4 sup {
+    font-size: 0.75em;
+    font-weight: 300;
+}
+
+.contentS ul {
+    position: relative;
+}
+
+.contentS ul li {
+    list-style: none;
+    color: #fff;
+    margin: 5px 0;
+}
+
+.fa-check {
+    color: #0f0;
+    margin-right: 10px;
+}
+
+.fa-times {
+    color: #f00;
+    margin-right: 10px;
+}
+
+/* .content a {
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    background: #f00;
+    margin-top: 15px;
+    border-radius: 20px;
+} */
