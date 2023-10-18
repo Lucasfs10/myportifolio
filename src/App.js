@@ -27,9 +27,9 @@ function App() {
       <div id="sobre">
         <Sobre />
       </div>
-      {/* <div>
+      <div>
         <Contato />
-      </div> */}
+      </div>
     </div>
   );
 }

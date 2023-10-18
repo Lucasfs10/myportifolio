@@ -24,9 +24,8 @@ function Sobre() {
                         </p>
                     </div>
                 </div>
-                <h2>Skills</h2>
-            </div>          
-            <div className='skills'>
+            </div>
+            {/* <div className='skills'>
                 <div className="toggle"></div>
                 <div className="containerS">
                     <div className="cardS">
@@ -34,6 +33,9 @@ function Sobre() {
                             <div className="contentS">
                                 <h3>Frontend Developer</h3>
                                 <h5>ReactJS</h5>
+                                <div class="progress-loader">
+                                    <div class="progress"></div>
+                                </div>
                                 <h5>HTML</h5>
                                 <h5>CSS</h5>
                             </div>
@@ -67,7 +69,7 @@ function Sobre() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 }
